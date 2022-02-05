@@ -6,7 +6,11 @@ export default function Aboutme() {
       <h3>Who am I</h3>
       <div className={"component " + styles.aboutme}>
         <div className={styles.profil}>
-          <img className={styles.profilimg} src="/img/profil.jpg" alt="" />
+          <img
+            className={styles.profilimg}
+            src="/img/profil.jpg"
+            alt="Ishkhan Gevorgyan"
+          />
         </div>
         <p>
           Hi friend! I'm Ishkhan Gevorgyan. I'm married and I have two sons. I
