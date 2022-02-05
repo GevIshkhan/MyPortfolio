@@ -12,9 +12,9 @@ export default function Aboutme() {
           Hi friend! I'm Ishkhan Gevorgyan. I'm married and I have two sons. I
           graduated from Vanadzor State university. I worked at yerevan "Hyusis"
           company as a web developer. I have more than 5 years of web
-          development experience. I think it's solid background. I can describe
-          myself as a highly organized, hard working and responsible person. In
-          my spare time I like playing chess, going hacking.
+          development experience. I think it's a solid background. I can
+          describe myself as a highly organized, hard working and responsible
+          person. In my spare time I like playing chess, go hiking.
         </p>
       </div>
     </>
