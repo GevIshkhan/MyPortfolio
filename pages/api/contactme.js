@@ -8,7 +8,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
   var { name, email, message } = JSON.parse(req.body);
   const mailOptions = {
     from: email,
