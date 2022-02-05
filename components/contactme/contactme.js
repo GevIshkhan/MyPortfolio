@@ -8,15 +8,25 @@ export default function ContactMe() {
           <input type="hidden" name="form-name" value="contact" />
           <div className={styles.formGroup}>
             <p>Enter your name</p>
-            <input className={styles.formInput} type="text" required />
+            <input
+              name="Name"
+              className={styles.formInput}
+              type="text"
+              required
+            />
           </div>
           <div className={styles.formGroup}>
             <p>Enter your email</p>
-            <input className={styles.formInput} required type="email" />
+            <input
+              name="Email"
+              className={styles.formInput}
+              required
+              type="email"
+            />
           </div>
           <div className={styles.formGroup}>
             <p>Your message</p>
-            <textarea className={styles.formInput}></textarea>
+            <textarea name="message" className={styles.formInput}></textarea>
           </div>
 
           <div className={styles.formGroup}>
