@@ -1,0 +1,51 @@
+.aboutme{
+    font-size: 1.2rem;
+    font-style:oblique;
+    letter-spacing: 0.07em;
+    line-height: 1.6em;
+    color:rgb(4, 25, 49);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  
+    .profil{
+        position: relative;
+        width: 12.2em;
+        height:12.2em;
+        background-color:white;
+        border:1.25em solid rgb(62, 87, 146);
+        border-radius: 50%;
+        margin-top:1em;
+        .profilimg{
+            position: absolute;
+            top:0.5em;
+            left: 0.5em;
+            width:8.8em;
+            border-radius: 50%;
+        }
+    }
+    p{
+       width: 70%;
+       background-color: rgba(255, 255, 255, 0.445);
+       border-radius: 1em;
+       padding: 0.5em;
+    }
+}
+
+@media  (max-width:900px){
+    .aboutme {
+        flex-direction: column;
+        p{
+
+            width:100%;
+        }
+    }
+  }
+
+  @media  (max-width:280px){
+    .aboutme {
+        font-size: 1rem;
+       line-height: 1.3em;
+    }
+  }

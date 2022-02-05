@@ -1,0 +1,62 @@
+
+@keyframes animSkills {
+    from{
+        transform:rotateZ(-5deg);
+    }
+    50%{
+        transform:rotateZ(5deg);
+    }
+    to{
+        transform:rotateZ(-5deg);
+    }
+}
+.skills{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.082);
+ 
+    .skill{
+        width:auto;
+        height:auto;
+        display: inline-block;
+        border-radius: 1em;
+        background:linear-gradient(to right,#3a3a3a,#616161);
+        color:rgb(114, 215, 246);
+        box-shadow:0px 5px 5px aqua;
+        cursor:default;
+        font-size:1.5rem;
+        padding:0.5em;
+        margin: 1em;
+        font-weight:bold;
+        animation-duration: 3s;
+        animation-name: animSkills;
+        animation-iteration-count: infinite;
+        transform-style: preserve-3d;
+        perspective: 700px;
+
+        &:hover{
+            animation-play-state: paused;
+        }
+    }
+
+}
+
+@media  (max-width:750px){
+    .skills{
+        justify-content: space-evenly;
+        .skill{
+           font-size: 1.3rem;
+        }
+    }
+  }
+
+  @media  (max-width:305px){
+    .skills{
+        
+        .skill{
+           font-size: 1rem;
+        }
+    }
+  }

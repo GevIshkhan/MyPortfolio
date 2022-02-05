@@ -1,0 +1,102 @@
+
+
+.header{
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        font-size: 1rem;
+        .portfolioBox{
+            display: flex;
+            flex-direction: column;
+            .authorName{
+                letter-spacing: 0.499em;
+                color: #032647;
+                padding-left:2px;
+               
+            }
+        }
+        .logo{
+            font-weight: bolder;
+            font-size: 2em;
+            font-family: monospace;
+            color:rgb(56, 56, 56);
+            padding: 0.8em 0em;
+            padding-bottom: 0.1em;
+            .keyboard{
+                font-size: 2.01em;
+            }
+            .dark{
+                color:#04305a;
+                border-bottom:1px solid #0873d8;
+            }
+            .light{
+                color:#0873d8;
+                border-bottom:1px solid #0873d8;
+            }
+            .lighter{
+                color:#075197;
+                border-bottom:1px solid #0873d8;
+            }
+            
+        }
+        ul{
+            list-style: none;
+            color:#032647;
+            display: flex;
+            li{
+                background-color: rgba(255, 255, 255, 0.281);
+                padding:0.4em;
+                margin:0 0.2em;
+                &:hover{
+                    background-color: rgba(0, 0, 0, 0.116);
+                    color: rgb(200, 200, 200);
+                }
+            }
+            
+        }
+        
+    }
+}
+
+@media (max-width:520px){
+   .header{
+       nav{
+           flex-direction: column;
+           ul{
+               margin-left: auto;
+               margin-right: auto;
+               padding: 0px;
+           }
+       }
+   }
+}
+@media (max-width:315px){
+    .header{
+        nav{
+
+           font-size: 0.8rem;
+         
+                .logo{
+
+                    .keyboard{
+                        font-size: 2em;
+                    }
+                }
+            
+    
+        }
+    }
+ }
+ @media (max-width:240px){
+    .header{
+        nav{
+                .logo{
+                    .keyboard{
+                        display:none;
+                    }
+                }
+        }
+    }
+ }

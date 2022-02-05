@@ -4,8 +4,17 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size:17px;
+  }
+h3{
+  color:#04305a;
+  border-bottom:1px solid #04305a;
+  margin-top:50px;
+  margin-bottom: 0px;
+  padding-bottom: 0.5em;
+  box-shadow:0 2px 0px rgb(114, 215, 246);
+  
 }
-
 a {
   color: inherit;
   text-decoration: none;
@@ -13,4 +22,29 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+body{
+  width: auto;
+  height: auto;
+  background:radial-gradient(circle at 100%,rgb(27, 55, 122),rgb(114, 215, 246));
+}
+.container{
+  width:95%;
+  max-width:1000px;
+  margin:0px auto;
+}
+.decor{
+  position: absolute;
+  background: radial-gradient(circle at center,rgb(114, 215, 246),rgb(56, 153, 209),rgb(235, 84, 172));
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  clip-path: polygon(0 0, 0 12%, 48% 51%, 0 86%, 0 100%, 49% 51%, 100% 100%, 100% 80%, 52% 48%, 100% 12%, 100% 0, 49% 48%);
+}
+
+@media (max-width:315px){
+  h3{
+    margin-top:30px;
+  }
 }

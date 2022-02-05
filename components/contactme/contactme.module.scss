@@ -1,0 +1,49 @@
+.contactme{
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.082);
+    margin-bottom: 30px;
+    padding-bottom: 1em;
+    .formGroup{
+        width:80%;
+        margin:0px auto;
+        padding-top:1em;
+        p{
+            margin: 0px;
+            margin-bottom: 5px;
+            color:#04305a;
+        }
+        .errorMessage{
+            color:rgb(187, 7, 7);
+            padding: 0.5em;
+        }
+
+    }
+    .formInput{
+        width:100%;
+        background-color: rgba(255, 255, 255, 0.24);
+        font-size: 1em;
+        padding: 1em;
+        border: 0px;
+        border-radius:1em;
+        box-shadow: 1px 1px 3px aqua;
+        &:focus{
+            border:none;
+            outline: none;
+        }
+    }
+    .button{
+        cursor:pointer;
+        font-size: 1.2em;
+        font-weight: bold;
+        border:2px solid aqua;
+        border-radius: 0.5em;
+        color:aqua;
+        padding: 0.5em 1em;
+        background-color: rgb(0, 111, 216);
+        &:hover{
+            color:rgb(0, 111, 216);
+            border:2px solid rgb(0, 111, 216);
+            background-color: aqua;
+        }
+    }
+}
