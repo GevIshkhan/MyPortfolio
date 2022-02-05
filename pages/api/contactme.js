@@ -20,6 +20,6 @@ export default function handler(req, res) {
       email,
     text: message,
   };
-  transporter.sendMail(mailOptions);
+  var respon = await transporter.sendMail(mailOptions);
   res.json({ msg: "Your message has been sent" });
 }
